@@ -1,14 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        int score = 60;
+        int score = 61;
 
-        String result;
+        boolean result = (score > 60) ? true : false;
 
-        if (score > 59) {
-            result = "합격";
-        }else {
-            result = "불합격";
-        }
-        System.out.println("결과 : " + result);
+        System.out.println(result);
     }
 }
