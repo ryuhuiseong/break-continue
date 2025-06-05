@@ -1,15 +1,15 @@
 public class Main {
-    public static void printStudent(String name, int age, String sex) {
-        System.out.println("이름: " + name);
-        System.out.println("나이: " + age);
-        System.out.println("성별: " + sex);
-        System.out.println("------");
-
-    }
     public static void main(String[] args) {
-        System.out.println("=== 학생 정보 ===");
-        Main.printStudent("alice", 20,"woman");
-        printStudent("bob", 22, "man");
-        printStudent("charlie", 25,"man");
+        char asciichair = ' ';
+        System.out.println("Character: " + asciichair);
+
+        int asciiCode = (int) asciichair;
+        System.out.println("ASCII Code: " + asciiCode );
+
+        char koreanchar = '가';
+        System.out.println("Character: " + koreanchar);
+
+        int unicodeCode = (int) koreanchar;
+        System.out.println("Unicode Code: U+" + Integer.toHexString(unicodeCode).toUpperCase());
     }
 }
