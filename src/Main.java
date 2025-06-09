@@ -1,15 +1,17 @@
 public class Main {
+    public static int add(int a, int b){
+        return a + b;
+    }
+
+    public static  int add(int a, int b, int c){
+        return  a + b + c;
+    }
+
+
     public static void main(String[] args) {
-        char asciichair = ' ';
-        System.out.println("Character: " + asciichair);
+        System.out.println("a + b = " + add(1, 2));
+        System.out.println("a + b + c = " +add(3, 4, 5));
 
-        int asciiCode = (int) asciichair;
-        System.out.println("ASCII Code: " + asciiCode );
-
-        char koreanchar = '가';
-        System.out.println("Character: " + koreanchar);
-
-        int unicodeCode = (int) koreanchar;
-        System.out.println("Unicode Code: U+" + Integer.toHexString(unicodeCode).toUpperCase());
+        System.out.println(1);
     }
 }
